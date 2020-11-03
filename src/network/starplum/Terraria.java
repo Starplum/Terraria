@@ -1,7 +1,10 @@
 package network.starplum;
 
 import net.md_5.bungee.api.plugin.Plugin;
+import network.starplum.commands.BaiChat;
+import network.starplum.commands.Halp;
 import network.starplum.commands.Server;
+import network.starplum.listeners.StaffChat;
 
 public class Terraria extends Plugin {
 	
@@ -13,6 +16,9 @@ public class Terraria extends Plugin {
 		terraria = this;
 		
 		new Server();
+		new Halp();
+		new StaffChat();
+		new BaiChat();
 		
 	}
 	
