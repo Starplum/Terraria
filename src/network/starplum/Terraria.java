@@ -11,8 +11,7 @@ public class Terraria extends Plugin {
 	private static Terraria terraria;
 	public static Terraria getTerraria() { return terraria; }
 	
-	@Override
-	public void onEnable() {
+	@Override public void onEnable() {
 		terraria = this;
 		
 		new Server();
